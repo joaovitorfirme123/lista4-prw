@@ -1,24 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercicio 2</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>exercicio2</title>
 </head>
 <body>
+
+  <form action="ex2.php" method="POST">
     
-    <form method = "GET" action = "ex2.php">digite algo<input type= "text"  name="txtNome">
+    <label for="campo_texto">nome:</label><br>
+    <input type="text" id="campo_texto" name="texto"><br><br>
 
+    <label for="area_texto">Caixa de texto de rolagem :</label><br>
+    <textarea id="area_texto" name="area_texto" rows="4" cols="50"></textarea><br><br>
 
+   
+    <label for="checkbox1">veículo preferido</label><br>
+    <input type="checkbox" id="checkbox1" name="checkbox1" value="valor1">
+    <label for="checkbox1">carro</label><br>
+    <input type="checkbox" id="checkbox2" name="checkbox2" value="valor2">
+    <label for="checkbox2">moto</label><br><br>
 
+    
+    <label for="radio1">sexo:</label><br>
+    <input type="radio" id="radio1" name="radio" value="opcao1">
+    <label for="radio1">masculino</label><br>
+    <input type="radio" id="radio2" name="radio" value="opcao2">
+    <label for="radio2">feminino</label><br><br>
 
-        <input type="submit" value="Enviar">
+    <label for="menu_select">qual o melhor combustivel</label><br>
+    <select id="menu_select" name="menu_select">
+      <option value="gasolina">gasolina</option>
+      <option value="etanol">etanol</option>
+      <option value="diesel">diesel</option>
+    </select><br><br>
 
-
-    </form>
-
-
-
+    
+    <input type="submit" value="Enviar">
+  </form>
 </body>
 </html>
